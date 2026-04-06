@@ -1,6 +1,6 @@
 # OctoAcme Personas
 
-This document defines typical roles and responsibilities used in OctoAcme project docs and exercises.
+This document defines typical roles and responsibilities used in OctoAcme project docs and exercises. It also expands the set of personas to include cross-functional specialists that improve clarity and accountability in modern delivery teams.
 
 ---
 
@@ -75,7 +75,125 @@ Project Managers coordinate delivery activities, manage schedules, risks, and co
 
 ---
 
-## How these personas are used in the exercise
-- Use these persona definitions to frame scenarios and sample interactions in the Skills Exercise.
-- Each persona can be used as a persona prompt for Copilot Spaces to shape role-specific guidance.
+## UX Designer (new)
 
+### Role Summary
+UX Designers are responsible for ensuring the product is usable, accessible, and meets user needs through research, design, and validation.
+
+### Responsibilities
+- Conduct lightweight user research and usability testing
+- Create user flows, wireframes, and prototypes
+- Produce accessible and consistent designs (design system artifacts)
+- Provide design specs and acceptance criteria for implementation
+- Participate in sprint reviews to validate delivered UX
+
+### Interactions
+- Works with Product Managers to translate user needs into prioritized requirements
+- Handoffs design artifacts and acceptance criteria to Developers and QA
+- Collaborates with Data Analysts to define usability metrics
+- Engages Project Manager to ensure design milestones are scheduled
+
+### Accountability
+- Responsible for design artifacts being complete for development (covering user flows, acceptance criteria, and accessibility considerations)
+
+---
+
+## DevOps / Platform Engineer (new)
+
+### Role Summary
+DevOps or Platform Engineers enable reliable delivery by managing CI/CD, infrastructure, and monitoring.
+
+### Responsibilities
+- Build and maintain CI/CD pipelines, deployment automation, and test environments
+- Define runbooks and rollback procedures for releases
+- Ensure infrastructure as code and environment parity across stages
+- Monitor system health and provide alerts and observability guidance
+- Assist in incident response and post-mortem analysis
+
+### Interactions
+- Works with Developers to ensure builds and releases are automated and testable
+- Partners with Project Manager and Product Manager to schedule deploy windows and validate release readiness
+- Coordinates with Security Lead for secure configuration and vulnerability fixes
+
+### Accountability
+- Accountable for pipeline reliability, deployment documentation, and operational readiness of releases
+
+---
+
+## Support / Customer Success (new)
+
+### Role Summary
+Support and Customer Success functions act as the frontline for users, capturing feedback and escalating product-impacting issues.
+
+### Responsibilities
+- Triage user reports, reproduce issues or collect context for engineering
+- Maintain and update user-facing documentation and FAQs
+- Escalate bugs and feature requests to Product and Project teams with priority and impact
+- Provide release notes and customer communication where applicable
+- Track and communicate recurring user patterns and product gaps
+
+### Interactions
+- Reports operational/user issues to Developers and Project Managers
+- Works with Product Managers to inform prioritization based on customer impact
+- Participates in release readiness and post-release validation efforts
+
+### Accountability
+- Accountable for the quality of customer communications and the completeness of issue reports for triage
+
+---
+
+## Security Lead (new)
+
+### Role Summary
+Security Leads ensure systems meet organizational security standards and help manage risk throughout the lifecycle.
+
+### Responsibilities
+- Perform threat modeling and architecture security reviews for new features
+- Run security scanning and triage findings
+- Define and communicate security acceptance criteria
+- Lead incident response coordination for vulnerabilities and breaches
+- Ensure compliance with relevant policies and regulatory requirements
+
+### Interactions
+- Works with Developers and DevOps for secure implementations and fixes
+- Advises Product and Project Managers on security trade-offs and timelines
+- Coordinates escalations with stakeholders during security incidents
+
+### Accountability
+- Accountable for security review completion and tracking remediation of critical findings
+
+---
+
+## Data Analyst (new)
+
+### Role Summary
+Data Analysts define measurement, interpret data, and provide insight to guide product decisions and demonstrate success.
+
+### Responsibilities
+- Define key metrics and instrumentation requirements early in planning
+- Build dashboards and reports to monitor feature performance and health
+- Support hypothesis validation through A/B analysis and cohort analysis
+- Provide actionable insights to Product Managers and Developers
+
+### Interactions
+- Works with Product Managers to tie success metrics to business objectives
+- Collaborates with Developers and DevOps to ensure data collection and pipeline reliability
+- Shares findings during planning, reviews, and retrospectives
+
+### Accountability
+- Accountable for the accuracy and timeliness of the metrics used to make product decisions
+
+---
+
+## How these personas interact
+
+- Handoffs: Product defines the problem and acceptance criteria → UX designs the user experience → Devs implement → QA validates → DevOps deploys → Support handles users and closes the loop with Product.
+- Cross-functional ceremonies: All applicable personas should attend kickoffs, relevant planning, demos, and retrospectives. Not every role needs to be present for every meeting; presence should be defined per milestone.
+- RACI (recommended): For each key deliverable (e.g., release, security review, instrumentation), add a RACI table in the project One-pager to clarify who is Responsible / Accountable / Consulted / Informed.
+
+---
+
+## Using these personas in exercises and onboarding
+
+- Reference these expanded personas when creating Project One-pagers and putting together "Proposed team / roles".
+- Add role-specific checklists (see docs/process-checklists.md) to ensure handoffs and responsibilities are explicit and repeatable.
